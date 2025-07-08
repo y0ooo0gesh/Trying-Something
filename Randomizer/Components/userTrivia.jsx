@@ -1,5 +1,4 @@
 import React from "react";
-import userInput from "intake"
 
 const userNom =async function ({id}) {
     try { 
