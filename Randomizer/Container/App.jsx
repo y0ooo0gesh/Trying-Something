@@ -1,13 +1,13 @@
 import React from "react";
-import RandNum from "../Components/RandomTrivia";
+import trivia from "../Components/RandomTrivia";
 
 function App(){
     return(
         <div>
             <div className="Heading">
                 <h1>Math Mage</h1>
+                <h2>{trivia}</h2>
             </div>
-            <h2><RandNum /></h2>
         </div>
     )
 }
