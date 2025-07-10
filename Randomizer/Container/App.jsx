@@ -1,12 +1,12 @@
 import React from "react";
-import trivia from "../Components/RandomTrivia";
+import GetApiData from "../Components/RandomTrivia";
 
 function App(){
     return(
         <div>
             <div className="Heading">
-                <h1>Math Mage</h1>
-                <h2>{trivia}</h2>
+                <h1>Ancient Mage</h1>
+                <h2>{GetApiData()}</h2>
             </div>
         </div>
     )

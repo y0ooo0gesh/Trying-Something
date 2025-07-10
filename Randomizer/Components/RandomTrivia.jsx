@@ -1,14 +1,9 @@
 import React from "react";
 
-const randNum = async function() {
-	try { 
-        const response = await fetch("http://numbersapi.com/random/trivia");
-        const about =await response.text();
-        return about
-	} catch(err) {
-		console.log('Well That didnt went well', err )
-	}
+const GetApiData = async function () {
+	const response = await fetch.("https://jsonplaceholder.typicode.com/users");
+	const apidata = await response.json();
+	return console.log(apidata); 
 }
-const trivia = await randNum();
 
-export default trivia;
+export default GetApiData ;
